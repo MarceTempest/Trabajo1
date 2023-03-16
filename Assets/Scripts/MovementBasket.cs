@@ -15,17 +15,11 @@ public class MovementBasket : MonoBehaviour
             transform.Translate(Vector3.left * Time.deltaTime * basketSpeed);
         }
         if (Input.GetKey(KeyCode.D))
-
-
-
         {
           transform.Translate(Vector3.right * Time.deltaTime * basketSpeed);
         }
         Vector3 pos = transform.position;
         pos.x = Mathf.Clamp(pos.x, min, max);
         transform.position = pos;
-    
-
-        
     }
 }
