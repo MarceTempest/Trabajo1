@@ -8,13 +8,10 @@ public class Basket : MonoBehaviour
     {
         if (other.CompareTag("Fruta"))
         {
+            FruitInfo fi = other.GetComponent<FruitInfo>();
             Destroy(other.gameObject);
-            GameManager.instance.AddScore(10);
+            GameManager.instance.AddScore(fi.scoreToAdd);
         }
-        if (other.CompareTag("Obstaculo"))
-        {
-            Destroy(other.gameObject);
-            GameManager.instance.AddScore(-10);
-        }
+        
     }
 }
