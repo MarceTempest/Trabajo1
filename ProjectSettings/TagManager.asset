@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fruta
   - Obstaculo
+  - player
   layers:
   - Default
   - TransparentFX

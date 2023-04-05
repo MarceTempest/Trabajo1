@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class KillZone : MonoBehaviour
 {
-    public PlayerLife playerLife; 
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Fruta"))
         {
             Destroy(other.gameObject);
-            playerLife.PlayerDamaged();
         }
     }
 }
