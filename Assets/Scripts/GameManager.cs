@@ -5,6 +5,8 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    public Vidas Respawn;
+    private int vidas = 3;
     public static GameManager instance;
     public int puntaje;
     public TextMeshProUGUI textScore;
@@ -25,5 +27,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
+    public void PerderVida()
+    {
+        vidas -= 1;
+        Respawn.DesactivarVida(vidas); 
+    }
 }
