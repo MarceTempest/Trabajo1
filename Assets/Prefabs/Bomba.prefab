@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6739403249411400364}
   - component: {fileID: 6739403249411400368}
   - component: {fileID: -4105759859033057161}
+  - component: {fileID: -5577705006916423699}
   m_Layer: 0
   m_Name: Bomba
   m_TagString: Fruta
@@ -131,6 +132,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameFruit: Bomba
   scoreToAdd: -10
+--- !u!114 &-5577705006916423699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6739403249411400365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92460a2a903ae1042af1919367cd4ef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7397452652897486464
 GameObject:
   m_ObjectHideFlags: 0
