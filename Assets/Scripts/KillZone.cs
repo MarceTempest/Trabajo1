@@ -10,6 +10,10 @@ public class KillZone : MonoBehaviour
         if (other.CompareTag("Fruta"))
         {
             Destroy(other.gameObject);
+     
         }
+        
+
     }
+
 }
